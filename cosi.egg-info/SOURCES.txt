@@ -1,0 +1,14 @@
+README.md
+setup.py
+cosi/__init__.py
+cosi/data_prep.py
+cosi/financials.py
+cosi/trading.py
+cosi/trend.py
+cosi/util.py
+cosi/visualization.py
+cosi.egg-info/PKG-INFO
+cosi.egg-info/SOURCES.txt
+cosi.egg-info/dependency_links.txt
+cosi.egg-info/not-zip-safe
+cosi.egg-info/top_level.txt
