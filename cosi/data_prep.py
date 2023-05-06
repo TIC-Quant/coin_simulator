@@ -4,7 +4,7 @@ import pyupbit as pu
 import datetime
 
 def get_ohlc(symbol, start_date=None, end_date=None):
-    symbol = "KRW-"+symbol
+    symbol = symbol
     start_date = datetime.datetime.strptime(start_date, "%Y-%m-%d")
     end_date = datetime.datetime.strptime(end_date, "%Y-%m-%d")
     delta = end_date - start_date
