@@ -18,7 +18,7 @@ def get_ohlc(symbol, start_date=None, end_date=None, interval="day"):
       delta = (end_date - start_date)
       count = delta.days*24
     df = pu.get_ohlcv(symbol, to = str(end_date), count=count, interval=interval)
-    #df.index = [datetime.datetime.strptime(datewithtime.strftime('%Y-%m-%d'), '%Y-%m-%d') for datewithtime in df.index]
+    # df.index = [datetime.datetime.strptime(datewithtime.strftime('%Y-%m-%d'), '%Y-%m-%d') for datewithtime in df.index]
     df = df.rename(columns={'open': 'Open', 'high': 'High', 'low':'Low', 'close':'Close', 'volume':'Volume'})
     df['Adj Close'] = df['Close']
     df = df.drop('value', axis=1)
