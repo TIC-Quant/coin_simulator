@@ -10,6 +10,8 @@ setup(
     packages=['cosi'],
     zip_safe=False,
     install_requires=[
-        'pyupbit==0.2.33'
+        'pyupbit==0.2.33',
+        'pandas==2.0.1',
+        'matplotlib'
         ]
 )

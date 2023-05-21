@@ -11,4 +11,5 @@ cosi.egg-info/PKG-INFO
 cosi.egg-info/SOURCES.txt
 cosi.egg-info/dependency_links.txt
 cosi.egg-info/not-zip-safe
+cosi.egg-info/requires.txt
 cosi.egg-info/top_level.txt
