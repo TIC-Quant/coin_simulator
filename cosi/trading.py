@@ -181,6 +181,13 @@ def performance(df, rf_rate=.01):
     rst['mdd'] = df['mdd'].min()
     rst['bm_mdd'] = df['bm_mdd'].min()
 
+    per = {}
+    per['CAGR'] = rst['annual_rtn'] - 1
+    per['acc_rtn'] = rst['acc_rtn'] - 1
+    per['avg_rtn'] = rst['avg_rtn'] - 1
+    per['bench_rtn'] = rst['bm_rtn']-1
+    per['num_of_trades'] = rst['no_trades']
+
     print('CAGR: {:.2%}'.format(rst['annual_rtn'] - 1))
     print('Accumulated return: {:.2%}'.format(rst['acc_rtn'] - 1))
     print('Average return: {:.2%}'.format(rst['avg_rtn'] - 1))
@@ -192,6 +199,6 @@ def performance(df, rf_rate=.01):
     print('Sharpe ratio: {:.2f}'.format(rst['sharpe_ratio']))
     print('MDD: {:.2%}'.format(rst['mdd']-1))
     print('Benchmark MDD: {:.2%}'.format(rst['bm_mdd']-1))
-    return rst
+    return per
 
 
