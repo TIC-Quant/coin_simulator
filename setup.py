@@ -2,7 +2,7 @@ from setuptools import  setup
 
 setup(
     name='cosi',
-    version='0.0.5',
+    version='0.0.6',
     description='FIC coin simulator',
     url='https://github.com/TIC-Quant/coin_simulator.git',
     author='DoyoonKim',
